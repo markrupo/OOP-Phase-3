@@ -1,0 +1,28 @@
+from datetime import date
+from enum import Enum
+
+
+class Student:
+    def __init__(self, name, anmeldedatum):
+        self.name = name
+        self.anmeldedatum = anmeldedatum
+
+class Pruefung:
+    def __init__(self, pruefungstyp):
+        self.pruefungstyp = pruefungstyp
+
+class Modul:
+    def __init__(self, name, ects):
+        self.name = name
+        self.ects = ects
+
+class Studiengang:
+    def __init__(self, name, ects):
+        self.name = name
+        self.ects = ects
+
+class Pruefungstyp(Enum):
+    Klausur = "Klausur"
+    Workbook = "Workbook"
+    Portfolio = "Portfolio"
+    Präsentation = "Präsentation"
