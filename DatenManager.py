@@ -9,8 +9,14 @@ def speichern(student, studiengang):
             "belegungen": [
                 {
                     "note": belegung.note,
-                    "pruefungstyp": belegung.pruefung.pruefungstyp.value,
-                    "pruefungsdatum": belegung.pruefungsdatum.isoformat()
+                    "pruefungsdatum": belegung.pruefungsdatum.isoformat(),
+                    "pruefung": {
+                        "pruefungstyp": belegung.pruefung.pruefungstyp.value,
+                        "modul": {
+                            "name": belegung.pruefung.modul.name,
+                            "ects": belegung.pruefung.modul.ects
+                        }
+                    }
                 }
                 for belegung in student.belegungen
             ]
