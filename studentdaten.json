@@ -1,0 +1,53 @@
+{
+  "student": {
+    "name": "Max Mustermann",
+    "anmeldedatum": "2024-09-01",
+    "belegungen": [
+      {
+        "note": 1.3,
+        "pruefungstyp": "Klausur",
+        "pruefungsdatum": "2025-01-15"
+      },
+      {
+        "note": 2.0,
+        "pruefungstyp": "Workbook",
+        "pruefungsdatum": "2025-01-20"
+      },
+      {
+        "note": 3.7,
+        "pruefungstyp": "Portfolio",
+        "pruefungsdatum": "2025-01-25"
+      }
+    ]
+  },
+  "studiengang": {
+    "name": "Angewandte KI",
+    "ects": 180,
+    "module": [
+      {
+        "name": "Programmierung 1",
+        "ects": 5
+      },
+      {
+        "name": "Analysis",
+        "ects": 5
+      },
+      {
+        "name": "Lineare algebra",
+        "ects": 5
+      },
+      {
+        "name": "OOP",
+        "ects": 5
+      },
+      {
+        "name": "Einführung in die ki",
+        "ects": 5
+      },
+      {
+        "name": "Statistik",
+        "ects": 5
+      }
+    ]
+  }
+}
