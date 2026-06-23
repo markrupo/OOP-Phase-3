@@ -1,5 +1,7 @@
 import json
 from EntityKlassen import *
+from datetime import datetime
+
 
 def speichern(student, studiengang):
     data = {
@@ -38,4 +40,24 @@ def speichern(student, studiengang):
 def laden():
     with open("student_data.json", "r", encoding="utf-8") as f:
         data = json.load(f)
-        return data
+
+    #studiengang wiederherstellung
+    studiengang = Studiengang(data["studiengang"]["name"], data["studiengang"]["ects"])
+
+    for modul in data["studiengang"]["module"]:
+        m = Modul(modul["name"], modul["ects"])
+        studiengang.module.append(m)
+
+    #student wiederherstellung
+    student = Student(data["student"]["name"], datetime.fromisoformat(data["student"]["anmeldedatum"]))
+
+    for belegung in data["student"]["belegungen"]:
+        index = 0
+        for modul in studiengang.module:
+            if modul.name == belegung["pruefung"]["modul"]["name"]:
+                index += studiengang.module.index(modul)
+                p = Pruefung(Pruefungstyp(belegung["pruefung"]["pruefungstyp"]), studiengang.module[index])
+                b = Belegung(belegung["note"], p, datetime.fromisoformat(belegung["pruefungsdatum"]))
+                student.belegungen.append(b)
+            
+    return student, studiengang

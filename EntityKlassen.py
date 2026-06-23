@@ -1,5 +1,4 @@
-from datetime import date
-from enum import Enum
+from enum import Enum  
 
 class Student:
     def __init__(self, name, anmeldedatum):
