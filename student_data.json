@@ -1,48 +1,61 @@
 {
   "student": {
     "name": "Max Mustermann",
-    "anmeldedatum": "2024-09-01T00:00:00",
+    "anmeldedatum": "2025-01-01",
+    "noten_ziel": 2.0,
+    "zeit_ziel": 3.5,
     "belegungen": [
       {
-        "note": 1.3,
-        "pruefungsdatum": "2025-01-15T00:00:00",
+        "note": 3.0,
+        "pruefungsdatum": "2026-07-05",
         "pruefung": {
           "pruefungstyp": "Klausur",
           "modul": {
-            "name": "Programmierung 1",
+            "name": "Projekt: Objektorientierte und funktionale Programmierung mit Python",
             "ects": 5
           }
         }
       },
       {
-        "note": 2.0,
-        "pruefungsdatum": "2025-01-20T00:00:00",
+        "note": 3.0,
+        "pruefungsdatum": "2026-07-05",
         "pruefung": {
-          "pruefungstyp": "Workbook",
+          "pruefungstyp": "Klausur",
           "modul": {
-            "name": "Analysis",
+            "name": "Einführung in das wissenschaftliche Arbeiten für IT und Technik",
             "ects": 5
           }
         }
       },
       {
-        "note": 3.7,
-        "pruefungsdatum": "2025-01-25T00:00:00",
+        "note": 3.0,
+        "pruefungsdatum": "2026-07-05",
+        "pruefung": {
+          "pruefungstyp": "Klausur",
+          "modul": {
+            "name": "Einführung in die Programmierung mit Python",
+            "ects": 5
+          }
+        }
+      },
+      {
+        "note": 2.3,
+        "pruefungsdatum": "2026-07-05",
+        "pruefung": {
+          "pruefungstyp": "Präsentation",
+          "modul": {
+            "name": "Mathematik: Analysis",
+            "ects": 5
+          }
+        }
+      },
+      {
+        "note": 2.3,
+        "pruefungsdatum": "2026-07-05",
         "pruefung": {
           "pruefungstyp": "Portfolio",
           "modul": {
-            "name": "OOP",
-            "ects": 5
-          }
-        }
-      },
-      {
-        "note": 3,
-        "pruefungsdatum": "2026-06-22T00:00:00",
-        "pruefung": {
-          "pruefungstyp": "Klausur",
-          "modul": {
-            "name": "Statistik",
+            "name": "Statistik - Wahrscheinlichkeit und deskriptive Statistik",
             "ects": 5
           }
         }
@@ -54,28 +67,132 @@
     "ects": 180,
     "module": [
       {
-        "name": "Programmierung 1",
+        "name": "Einführung in das wissenschaftliche Arbeiten für IT und Technik",
         "ects": 5
       },
       {
-        "name": "Analysis",
+        "name": "Einführung in die Programmierung mit Python",
         "ects": 5
       },
       {
-        "name": "Lineare algebra",
+        "name": "Mathematik: Analysis",
         "ects": 5
       },
       {
-        "name": "OOP",
+        "name": "Kollaboratives Arbeiten",
         "ects": 5
       },
       {
-        "name": "Einführung in die ki",
+        "name": "Statistik - Wahrscheinlichkeit und deskriptive Statistik",
         "ects": 5
       },
       {
-        "name": "Statistik",
+        "name": "Artificial Intelligence",
         "ects": 5
+      },
+      {
+        "name": "Projekt: Objektorientierte und funktionale Programmierung mit Python",
+        "ects": 5
+      },
+      {
+        "name": "Mathematik: Lineare Algebra",
+        "ects": 5
+      },
+      {
+        "name": "Interkulturelle und ethische Handlungskompetenzen",
+        "ects": 5
+      },
+      {
+        "name": "Statistik - Induktive Statistik",
+        "ects": 5
+      },
+      {
+        "name": "Projekt: Cloud Programming",
+        "ects": 5
+      },
+      {
+        "name": "Cloud Computing",
+        "ects": 5
+      },
+      {
+        "name": "Maschinelles Lernen - Supervised Learning",
+        "ects": 5
+      },
+      {
+        "name": "Maschinelles Lernen - Unsupervised Learning und Feature Engineering",
+        "ects": 5
+      },
+      {
+        "name": "Einführung in Computer Vision",
+        "ects": 5
+      },
+      {
+        "name": "Einführung in das Reinforcement Learning",
+        "ects": 5
+      },
+      {
+        "name": "Projekt: Computer Vision",
+        "ects": 5
+      },
+      {
+        "name": "Neuronale Netze und Deep Learning",
+        "ects": 5
+      },
+      {
+        "name": "Neuronale Netze und Deep Learning",
+        "ects": 5
+      },
+      {
+        "name": "Einführung in NLP",
+        "ects": 5
+      },
+      {
+        "name": "Projekt: NLP",
+        "ects": 5
+      },
+      {
+        "name": "Data Science Software Engineering",
+        "ects": 5
+      },
+      {
+        "name": "Projekt: Vom Modell zum Produktvertrieb",
+        "ects": 5
+      },
+      {
+        "name": "Einführung in Datenschutz und IT-Sicherheit",
+        "ects": 5
+      },
+      {
+        "name": "Seminar: Ethische Fragen der Data Science",
+        "ects": 5
+      },
+      {
+        "name": "Projekt: Edge AI",
+        "ects": 5
+      },
+      {
+        "name": "Einführung in die Robotik",
+        "ects": 5
+      },
+      {
+        "name": "Projekt: Agiles Projektmanagement",
+        "ects": 5
+      },
+      {
+        "name": "Wahlpflichtmodule A",
+        "ects": 10
+      },
+      {
+        "name": "Wahlpflichtmodule B",
+        "ects": 10
+      },
+      {
+        "name": "Wahlpflichtmodule C",
+        "ects": 10
+      },
+      {
+        "name": "Bachelorarbeit",
+        "ects": 10
       }
     ]
   }
