@@ -7,7 +7,8 @@ from datetime import date
 class Service:
 
     def __init__(self):
-        self.student, self.studiengang = laden()
+        self.daten_manager = daten_manager()
+        self.student, self.studiengang = self.daten_manager.laden()
 
     def notendurchschnitt(self):
         """Teilt die Note aller bestandenen Belegungen durch die Anzahl der bestandenen Belegungen"""
@@ -109,7 +110,7 @@ class Service:
             return "Das Ziel darf nicht kleiner als 1 oder großer als 4 sein"
         else:
             self.student.noten_ziel = float(ziel)
-            speichern(self.student, self.studiengang)
+            self.daten_manager.speichern(self.student, self.studiengang)
             return "Notenziel verändert"
     
     def zeit_ziel_aendern(self, ziel):
@@ -123,7 +124,7 @@ class Service:
             return "Die maximale Studiendauer beträgt 6 Jahren, bitte geben Sie einen niedrigeren Wert ein"
         else:
             self.student.zeit_ziel = float(ziel)
-            speichern(self.student, self.studiengang)
+            self.daten_manager.speichern(self.student, self.studiengang)
             return "Zeit ziel geändert"
         
     def pruefung_belegen(self, modul, note_eingabe, pruefungstyp_eingabe):
@@ -167,7 +168,7 @@ class Service:
         p = Pruefung(Pruefungstyp(pruefungstyp_eingabe), m)
         neue_belegung = Belegung(note_eingabe, p, date.today())
         self.student.belegungen.append(neue_belegung)
-        speichern(self.student, self.studiengang)
+        self.daten_manager.speichern(self.student, self.studiengang)
         return "prüfung belegt"
 
     def modul_liste(self):
