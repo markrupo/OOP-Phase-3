@@ -59,6 +59,17 @@
             "ects": 5
           }
         }
+      },
+      {
+        "note": 3.0,
+        "pruefungsdatum": "2026-07-10",
+        "pruefung": {
+          "pruefungstyp": "Klausur",
+          "modul": {
+            "name": "Interkulturelle und ethische Handlungskompetenzen",
+            "ects": 5
+          }
+        }
       }
     ]
   },

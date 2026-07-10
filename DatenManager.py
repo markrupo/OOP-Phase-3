@@ -3,7 +3,7 @@ from EntityKlassen import *
 from datetime import datetime
 
 class daten_manager:
-    def speichern(student, studiengang):
+    def speichern(self, student, studiengang):
         """Speichert Student und Studiengang im JSON Format"""
         data = {
             "student": {
@@ -40,7 +40,7 @@ class daten_manager:
             json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-    def laden():
+    def laden(self):
         """Stellt Student und Studiengang als Objekte wieder her"""
         with open("student_data.json", "r", encoding="utf-8") as f:
             data = json.load(f)
