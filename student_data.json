@@ -2,8 +2,8 @@
   "student": {
     "name": "Max Mustermann",
     "anmeldedatum": "2025-01-01",
-    "noten_ziel": 2.5,
-    "zeit_ziel": 3.5,
+    "noten_ziel": 2.3,
+    "zeit_ziel": 1.0,
     "belegungen": [
       {
         "note": 3.0,

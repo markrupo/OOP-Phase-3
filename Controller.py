@@ -29,8 +29,7 @@ class controller:
         self.view.note(
             self.service.notenschnitt_status()[0],
             self.service.notendurchschnitt(),
-            self.service.student.noten_ziel,
-            self.service.notenschnitt_status()[1]
+            self.service.student.noten_ziel
         )
 
 
@@ -76,7 +75,7 @@ class controller:
 
         elif eingabe == "6":
             """Nimmt die Nutzereingabe entgegen und ändert das Zeitziel"""
-            eingabe = input("0 = Zurück zum Dashboard\nneues ziel setzen:")
+            eingabe = input("0 = Zurück zum Dashboard\nneues ziel in Jahren setzen:")
             if eingabe == "0":
                 return self.dashboard_zeigen()
             else:

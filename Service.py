@@ -50,7 +50,10 @@ class Service:
         anzahl_volle_vierecke = round((p_zeit / 100) * 36)
         anzahl_lehre_vierecke = 36 - anzahl_volle_vierecke
         zeiger = anzahl_volle_vierecke * "■" + anzahl_lehre_vierecke * "□"
-        return zeiger
+        if p_zeit <= 100:
+            return zeiger
+        else:
+            return "\nZiel zeit überscritten, bitte neues ziel setzen"
 
     def erreichte_ects(self):
         """Rechnet wie viele ECTS geschafft wurden"""
