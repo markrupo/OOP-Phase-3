@@ -1,18 +1,18 @@
 from Service import *
-from DatenManager import *
 
 class View:  
 
-    def banner(self, gesamtindikator, student_name, studiengang_name):
+    def banner(self, gesamtindikator, student_name, studiengang_name, student_anmeldedatum):
         """Druckt die Infos aus dem Gesamtindikator"""
 
         print("=" * 50 + "\n")
-        print(f"{"Gesamtindikator:":>32} {gesamtindikator[0]}")
-        if gesamtindikator[1]: print("\n"f"{gesamtindikator[1]:^52}""\n")
-        if gesamtindikator[2]: print("\n"f"{gesamtindikator[2]:^52}""\n")
+        print(f"{"Gesamtindikator:":>32} {gesamtindikator[0]}""\n")
+        if gesamtindikator[1]: print(f"{gesamtindikator[1]:^52}""\n")
+        if gesamtindikator[2]: print(f"{gesamtindikator[2]:^52}""\n")
         print("=" * 50 + "\n")
 
         print(f"Student: {student_name}")
+        print(f"Anmeldedatum: {student_anmeldedatum}")
         print(f"Studiengang: {studiengang_name}\n")
     
     def zeit(self,
@@ -53,5 +53,5 @@ class View:
         print(f"{f"Insgesamt {anzahl_belegungen} belegungen":^61}{"\n"*2}")
         print(f"{"Modul":^68} | {"Note":^5}| {"Art der Prüfung":^15} | {"Datum":^10}")
         print("-" * 106)
-        for i, belegung in enumerate(belegungen, start=1):
+        for belegung in enumerate(belegungen, start=1):
             print(f"{belegung.pruefung.modul.name:<68} | {belegung.note:<5}| {belegung.pruefung.pruefungstyp.value:^15} | {belegung.pruefungsdatum}")

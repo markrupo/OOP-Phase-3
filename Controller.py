@@ -13,7 +13,8 @@ class controller:
         self.view.banner(
             self.service.gesamtindikator(),
             self.service.student.name,
-            self.service.studiengang.name
+            self.service.studiengang.name,
+            self.service.student.anmeldedatum
             )
         
         self.view.zeit(
